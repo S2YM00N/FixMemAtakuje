@@ -1,0 +1,24 @@
+package pl.fixmem.kraszer
+
+import kotlin.Throws
+import java.lang.InterruptedException
+import java.util.*
+import kotlin.jvm.JvmStatic
+
+object Kraszer {
+    @Throws(InterruptedException::class)
+    @JvmStatic
+    fun main(args: Array<String>) {
+        val scan = Scanner(System.`in`)
+        println("Podaj serwer: ")
+        val serwer = scan.nextLine()
+        println("Podaj ilosc pakietow: ")
+        val pakiety = scan.nextLine()
+        println("Startuje kraszer!")
+        println(" ")
+        Thread.sleep(4500L)
+        println("Wysyłam $pakiety pakietów na serwer $serwer")
+        Thread.sleep(1000L)
+        println("FixMemKraszer, Kraszed $serwer!!!11!1!")
+    }
+}
